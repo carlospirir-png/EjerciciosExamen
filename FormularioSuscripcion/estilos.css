@@ -1,0 +1,59 @@
+/*CADPO*/
+body{
+    display: flex; /*flexbox para centrar*/
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /* Centra verticalmente*/ 
+    height: 100vh;
+    background: #121212;
+    margin: 0;
+}
+
+.suscribe-card{
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #333; /*Borde sutil*/
+    box-shadow: 0 1px 20px rgba(0,0,0,0.3); /*Sombra*/
+}
+
+h2{
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px;/*Espacio inferior*/
+}
+
+p{
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;/*Espacio inferior*/
+
+}
+
+input{
+    width: 100%;/* Ancho completo*/
+    padding: 12px;/*Espacio interno*/
+    margin-bottom: 15px; /*Espacio inferior*/
+    background: #2a2a2a;
+    border:none; /*Sin borde*/
+    border-radius: 5px; /*Bordes redondeados*/
+    color: white;
+    box-sizing: border-box; /*Incluye padding y borde*/
+
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #22c55e;
+    color: white;
+    border: none;
+    border-radius: 5px;/*Sin radios*/
+    font-weight: bold; /*Bordes redondeados*/
+    cursor: pointer; /*Cursor de mano*/
+}
+
+button:hover{
+ background: #16a34a; /*Color al pasar el mouse*/
+}

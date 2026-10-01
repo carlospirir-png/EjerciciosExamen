@@ -1,0 +1,29 @@
+/*CADPO*/
+
+body{
+    display: flex;
+    justify-content: center; /*Centrado horizontal*/
+    align-items: center;  /*Centrado vertical*/
+    height: 100vh; /*Alto de la ventana*/
+    background-color: antiquewhite;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rnb-text{
+    font-size: 90px; /*Tamaño grande del texto*/
+    font-weight: bold;/*Texto en negrita*/
+    text-transform: uppercase; /* Convierte a mayuscula*/
+    letter-spacing: -2px; /*Espacio entre letrass*/
+    margin: 0;
+
+    /*Degradado de color en el texto*/
+    background: linear-gradient(135deg, #240046 0%,
+     #7b2cbf 50%, 
+     #ffd700 100%); /*Gradiente morado a amarillo*/
+    -webkit-background-clip: text; /* Aplica el fondo solo al texto*/
+    background-clip: text; /* Propiedad estandar*/
+    color: transparent; /*Hace transparente el color del texto*/
+    /*Sombra para profundidad*/
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.11));
+} 

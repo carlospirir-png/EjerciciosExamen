@@ -1,0 +1,47 @@
+
+body{
+    margin: 0; /* Elimina márgenes */
+    font-family: sans-serif; /* Tipo de fuente */
+}
+
+nav{
+    background: #FBC02D; /* Color de fondo */
+    display: flex; /* Usa flexbox */
+    justify-content: space-between; /* Separa los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 15px 20px; /* Espaciado interno */
+}
+
+.logo{
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+.links{
+    list-style: none; /* Sin viñetas */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin espaciado */
+    display: flex; /* Alineación horizontal */
+    gap: 15px; /* Espacio entre enlaces */
+}
+
+
+.links a{
+    color: #333; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+}
+
+
+@media (max-width: 600px){
+    nav{
+        flex-direction: column; /* Cambia a vertical */
+        gap: 10px; /* Espacio entre elementos */
+    }
+    .links{
+        flex-direction: column; /* Enlaces en vertical */
+        text-align: center; /* Texto centrado */
+    }
+}

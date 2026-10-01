@@ -1,0 +1,27 @@
+/*CADPO*/
+body{
+    display: flex; /* Usa Flexbox*/
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /*Centra verticalmente*/
+    height: 100vh; 
+    background: #111;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif; /* Tipo de fuente*/
+}
+
+.pop-text{
+    font-size: 80px;/*Tamaño del texto*/
+    font-weight: 900;/*Negrita*/
+    text-transform: uppercase; /*Letras mayusculas*/
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    /*Degradado*/
+
+    -webkit-background-clip: text; /*Aplica el degradado al texto*/
+    background-clip: text; /*Propiedad estandar*/
+    color: transparent;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 204, 0.5));
+    /*Sombra brillante*/
+
+    letter-spacing: -2px; 
+    margin: 0;
+}

@@ -1,0 +1,72 @@
+/*CADPO*/
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex; /*Usa flexbox para center*/
+    justify-content: center; /*Centra horizontalmente*/
+    align-items: center; /*Centra verticalmente*/
+    background: #2c3e50;
+    font-family: 'Courier New', Courier, monospace; /*Tipo de letra del texto*/
+}
+
+.ticket{
+    width: 300px; /*Ancho del boleto*/
+    background: #fff;/*Fondo blanco*/
+    border-radius: 10px; /*Bordes redondeados*/
+    overflow: hidden; /*Oculta lo que sobresalga*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /*Sombra*/
+}
+
+.top{
+    background: #e74c3c; 
+    color: white; /*Color blanco del texto*/
+    padding: 20px; /*Espacio interno*/
+    text-align: center; 
+    position: relative; /*Para los pseudo elementos*/
+}
+
+
+.top::before, .top::after{
+    content: ''; /*Crea un elemento vacio*/
+    position: absolute; /*Posicion absoluta*/
+    bottom: -10px;
+    width: 20px; 
+    height: 20px;
+    background: #2c3e50;
+    border-radius: 50%; /*Bordes redondeados*/
+}
+
+.top::before{left: -10px;}/*Ciruclo izquierdo y derecho*/
+.top::after{right: -10px;}
+
+h2{
+    margin: 0;
+    font-size: 24px ;
+    text-transform: uppercase;
+}
+
+.movie-title{
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.bottom{
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between; /*Separa los elementos*/
+    border-top: 2px dashed #ccc;/*Linea punteada*/
+
+}
+
+.info div{
+    font-size: 12px;/*Tamaño del texto*/
+    color: #7f8c8d;
+    margin-bottom: 5px;/*Espacio inferior*/
+}
+
+.info span{
+    font-size: 16px; /*Tamaño del texto*/
+    font-weight: bold;
+    color: #2c3e50; 
+}

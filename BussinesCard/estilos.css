@@ -1,0 +1,85 @@
+/*CADPO*/
+body {
+    font-family: "Segoe UI", sans-serif; 
+    background-color: #f0f2f5; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura */
+    margin: 0; 
+}
+
+
+.card {
+    width: 400px; 
+    height: 230px; 
+    background: white; 
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex; /* Flexbox para las dos partes */
+    overflow: hidden; /* Oculta el desbordamiento */
+}
+
+
+.left {
+    width: 35%; 
+    background: #2c3e50;
+    display: flex; 
+    flex-direction: column; /* Dirección en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente */
+    padding: 20px; 
+}
+
+
+.photo {
+    width: 80px; /* Ancho del círculo */
+    height: 80px; /* Alto del círculo */
+    background: #ddd; /* Color del fondo */
+    border-radius: 50%; /* Forma circular */
+    border: 3px solid white; /* Borde blanco */
+    overflow: hidden; /*Ocultar cualquier contenido que sobresalga*/
+}
+
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Para q no se deforme en el espacio que se le asigno*/
+}
+
+
+.right {
+    width: 65%;
+    padding: 30px; 
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Dirección en columna */
+    justify-content: center; /* Centra verticalmente */
+}
+
+
+h2 {
+    margin: 0;
+    color: #333;
+    font-size: 22px;
+}
+
+.title {
+    margin: 5px 0 20px 0;
+    color: #78c8ed;
+    font-size: 14px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+
+.info {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.6; /* Espacio entre líneas */
+}
+
+
+.info div {
+    margin-bottom: 5px;
+}

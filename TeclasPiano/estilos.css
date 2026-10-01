@@ -1,0 +1,32 @@
+/*CADPO*/
+body{
+    display: flex; /* Usa flexbox para centrar*/
+    justify-content: center;/*Centrado horizontal*/
+    align-items: center; /*Centrado vertical*/
+    height: 100vh;
+    margin: 0;
+    background: #f0fff0;
+}
+
+.piano{
+    position: relative; /*Permite posicionar las teclas negrasw*/
+    display: flex; /*Coloca la teclas blancas en fila*/
+}
+.white{
+    width: 60px; /* Ancho y alto de las teclas*/
+    height: 150px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.black{
+    width: 40px;
+    height: 90px;
+    background: black;
+    position: absolute; /* Posicion absoluta para superponer*/
+    z-index: 2; /*Se muestra encima de las blancas*/
+}
+
+/*Teclas negras*/
+.b1{left:40px} /* Se ubica sobre la primera y segunda*/
+.b2{left: 100px} /*se ubica sobre la segunda y tercera*/

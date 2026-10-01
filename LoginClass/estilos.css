@@ -1,0 +1,77 @@
+/* CADPO  */
+
+body {
+    margin: 0;               
+    height: 100vh;            /* Altura de toda la ventana */
+    display: flex;            
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    font-family: 'Segoe UI', sans-serif; /* Tipo de fuente */
+    background: linear-gradient(45deg, #FC466B, #3F5EFB); /* Fondo degradado */
+}
+
+
+.glass-card {
+    width: 320px;             
+    padding: 40px;            
+    border-radius: 20px;      /* Bordes redondeados */
+    background: rgba(255, 255, 255, 0.25); /* Fondo semitransparente */
+    backdrop-filter: blur(10px);           /* Desenfoca lo que está detrás */
+    -webkit-backdrop-filter: blur(10px);  
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    text-align: center;       /* Centra el contenido */
+    color: white;            
+}
+
+
+h2 {
+    margin-top: 0;            /* Sin margen superior */
+    margin-bottom: 30px;      
+    font-weight: 600;         /* Grosor del texto */
+    letter-spacing: 2px;      /* Espacio entre letras */
+    text-transform: uppercase; /* Convierte a mayúsculas */
+}
+
+input {
+    width: 100%;              /* Ancho completo */
+    padding: 15px;            /* Espacio interno */
+    margin-bottom: 20px;      /* Espacio inferior entre campos */
+    border: none;             /* Sin borde */
+    border-radius: 30px;      /* Bordes redondeados */
+    background: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+    color: white;            
+    outline: none;           
+    box-sizing: border-box;   /* Incluye padding en el ancho */
+    transition: 0.3s;        
+}
+
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Color del texto del placeholder */
+}
+
+
+input:focus {
+    background: rgba(255, 255, 255, 0.4); /* Fondo más visible */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra al enfocar */
+}
+
+
+button {
+    width: 100%;              /* Ancho completo */
+    padding: 15px;            /* Espacio interno */
+    border: none;           
+    border-radius: 30px;      /* Bordes redondeados */
+    background: white;        
+    color: #3F5EFB;          
+    font-weight: bold;        /* Texto en negrita */
+    font-size: 16px;          
+    cursor: pointer;          /* Cursor de mano */
+    transition: transform 0.2s; /* Transición suave */
+}
+
+
+button:hover {
+    transform: scale(1.05);   /* Aumenta ligeramente el tamaño */
+}

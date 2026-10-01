@@ -1,0 +1,54 @@
+/* CADPO */
+body {
+    display: flex; /* Usa Flexbox para centrar */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Alto de toda la ventana */
+    background: #f0f0f0; 
+    font-family: sans-serif; 
+}
+
+
+.cover {
+    width: 300px; /* Ancho de la tarjeta */
+    height: 300px; /* Alto de la tarjeta */
+    background: linear-gradient(
+        45deg,
+        #f9d9e9 0%,
+        #f9a9e9 0%,
+        #fad0c4 100%
+    );
+    border-radius: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden; /* Oculta el desbordamiento */
+    display: flex; 
+    flex-direction: column; /* Elementos en columna */
+    justify-content: flex-end; 
+    padding: 20px; 
+    color: white; 
+}
+
+
+.circle {
+    position: absolute; 
+    top: -50px; 
+    right: -50px; 
+    width: 200px; 
+    height: 200px; 
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%; 
+}
+
+h2 {
+    margin: 0; 
+    font-size: 24px; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+p {
+    margin: 5px 0 0; /* Margen superior */
+    font-size: 14px; /* Tamaño de letra */
+    opacity: 0.9; /* Ligera transparencia */
+}

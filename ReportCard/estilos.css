@@ -1,0 +1,43 @@
+/* CADPO */
+
+body {
+  display: flex;            
+  justify-content: center;    /* Centra horizontalmente */
+  align-items: center;        /* Centra verticalmente */
+  height: 100vh;              /* Alto de toda la ventana */
+  background: #f4f4f4;      
+  font-family: sans-serif;    /* Tipo de fuente */
+  margin: 0;                 
+}
+
+
+.card {
+  width: 250px;               /* Ancho de la tarjeta */
+  background: white;          /* Fondo blanco */
+  padding: 20px;              /* Espacio interno */
+  border-radius: 10px;        /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra */
+}
+
+
+h3 {
+  margin: 0 0 15px;           /* Margen inferior */
+  text-align: center;         /* Texto centrado */
+  color: #333;                /* Color del texto */
+}
+
+
+li {
+  display: flex;             
+  justify-content: space-between; /* Separa los elementos */
+  padding: 8px 0;             /* Espacio interno */
+  border-bottom: 1px solid #eee; /* Línea divisoria */
+  list-style: none;           /* Quita los puntos de la lista */
+  color: #555;                /* Color del texto */
+}
+
+
+span {
+  font-weight: bold;          /* Texto en negrita */
+  color: #2ecc71;             /* Color verde */
+}

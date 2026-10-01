@@ -1,0 +1,77 @@
+body{
+    /*Colocar un fondo */
+    background-color: sandybrown ;
+    /*Tipo de letra*/
+    font-family: Arial;
+    /*Elimina el margen por defecto*/
+    margin: 0;
+    /*Agrega espacio interno alrededor */
+    padding: 30px;
+}
+
+h1{
+    /*Color de la letra*/
+    color: white;
+    /*Se centra la leta*/
+    text-align: center;
+    /*Tamaño de la letra*/
+    font-size: 24px;
+    /*Se le da un margen en la parte de abajo*/
+    margin-bottom: 30px;
+
+}
+
+.contenedor-libros{
+    /*Activa CSS GRID*/
+    display: grid;
+    /*crea 5 columnas iguales*/
+    grid-template-columns: repeat(5,1fr);
+    /*Espacio entre libros*/
+    gap: 30px;
+
+}
+
+.libro{
+    background-color: chocolate;
+    border: 2px solid blueviolet;
+    padding: 20px;
+    /*Espacio en la parte de abajo*/
+    min-height: 200px;
+    /*Incluye padding y borde dentro del tamaño*/
+    box-sizing: border-box;
+}
+
+.libro h2{
+    /*Color del texto*/
+    color: aliceblue;
+    font-size: 18px;
+    /*Margen 0*/
+    margin-top:0;
+}
+
+.libro p{
+    /*Tamaño del texto*/
+    font-size: 14px;
+    /*Separacion entre cada dato*/
+    margin: 6px 0;
+    
+}
+
+.disponible{
+    /*Texto para libros disponibles*/
+    color: green;
+    /*Negrita*/
+    font-weight: bold;
+}
+
+.no-disponible{
+    /*Texto para libros no disponibles*/
+    color: red;
+    /*Negrita*/
+    font-weight: bold;
+}
+
+.libro:hover{
+    /*Efecto de escala al pasar el mouse*/
+    transform: scale(1.05);
+}

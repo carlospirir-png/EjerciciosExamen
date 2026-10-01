@@ -1,0 +1,29 @@
+/* CADPO */
+body {
+  background: #333;        
+  padding: 20px;           /* Espacio interno alrededor */
+  display: flex;       
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100vh;           /* Altura de toda la ventana */
+  margin: 0;            
+}
+
+.box {
+  width: 100px;            /* Ancho del cuadro */
+  height: 50px;            /* Alto del cuadro */
+  margin: 10px;            /* Margen entre cuadros */
+  color: white;            /* Color del texto */
+  display: flex;           
+  align-items: center;     /* Centra verticalmente el texto */
+  justify-content: center; /* Centra horizontalmente el texto */
+}
+
+.solid {
+  background-color: rgb(255, 0, 0); /* Rojo totalmente opaco */
+}
+
+
+.trans {
+  background-color: rgba(255, 0, 0, 0.5); /* Rojo con 50% de opacidad */
+}
