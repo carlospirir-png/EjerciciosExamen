@@ -1,0 +1,62 @@
+
+body {
+    font-family: monospace;     
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        /* Centra verticalmente */
+    height: 100vh;              /* Ocupa toda la altura */
+    background: #050505;        /* Fondo oscuro */
+    margin: 0;                 
+
+}
+
+.card {
+    background: #101010;        /* Color de fondo */
+    padding: 40px;              /* Espaciado interno */
+    border: 2px solid #00f3ff; /* Borde de color */
+    box-shadow: 0 0 15px #00f3ff; /* Efecto de resplandor */
+    width: 280px;              
+    text-align: center;         
+    color: #fff;                /* Color del texto */
+    border-radius: 10%;
+}
+
+h2 {
+    text-shadow: 0 0 10px #00f3ff; /* Efecto de neón */
+    margin-bottom: 20px;           
+}
+
+
+input {
+    width: 100%;                 /* Ancho completo */
+    padding: 10px;              
+    margin-bottom: 20px;         /* Espacio inferior */
+    background: transparent;     /* Fondo transparente */
+    border: none;                
+    border-bottom: 2px solid #333; /* Línea inferior */
+    color: #fff;                 /* Color del texto */
+    box-sizing: border-box;      
+}
+
+input:focus {
+    outline: none;               /* Quita el contorno */
+    border-color: #ff00de;       /* Cambia color al enfocar */
+    box-shadow: 0 5px 5px -5px #ff00de; /* Sombra al enfocar */
+}
+
+
+button {
+    width: 100%;                
+    padding: 10px;               
+    background: transparent;     
+    color: #00f3ff;      /*Color*/         
+    border: 2px solid #00f3ff;   /*Borde */ 
+    cursor: pointer;            
+    font-weight: bold;           
+}
+
+button:hover {
+    background: #00f3ff;         
+    color: #000;                
+    box-shadow: 0 0 20px #00f3ff; /* Mayor resplandor */
+}
