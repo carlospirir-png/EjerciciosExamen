@@ -1,0 +1,51 @@
+
+body{
+  margin: 0;               
+    height: 100vh;            /* Altura de toda la ventana */
+    display: flex;            
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    font-family: 'Segoe UI', sans-serif; /* Tipo de fuente */
+   background: linear-gradient(45deg, #871fdbd2, #1f6bcee8);
+  }
+
+.log{
+  width: 320px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+
+}
+
+button{
+  font-family: Gill Sans;
+  padding: 10px;
+  width: 150px;
+  border: none;
+  border-radius: 6px;  
+  background: rgba(221, 16, 177, 0.849);
+  cursor: pointer;
+ 
+}
+
+button:hover {
+    transform: scale(1.05);   /* Aumenta ligeramente el tamaño */
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.4); /* Fondo más visible */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra al enfocar */
+}
+

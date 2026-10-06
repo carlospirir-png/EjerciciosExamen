@@ -1,0 +1,85 @@
+/* Prof. Christian — HTML y CSS */
+
+/* Configuramos toda la página */
+body {
+    margin: 0;              /* Elimina los márgenes por defecto */
+    min-height: 100vh;      /* Ocupa toda la altura de la pantalla */
+    display: flex;          /* Activa Flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    background: #202020;     /* Fondo oscuro */
+    overflow: hidden;        /* Evita barras de desplazamiento */
+    perspective: 1000px;     /* Da profundidad al efecto 3D */
+}
+
+/* Contenedor donde se encuentran las imágenes */
+.container {
+    position: relative;       /* Permite posicionar las tarjetas */
+    width: 200px;             /* Ancho del carrusel */
+    height: 260px;            /* Alto del carrusel */
+    transform-style: preserve-3d; /* Mantiene los elementos en 3D */
+    animation: animate 20s linear infinite; /* Gira el carrusel */
+}
+
+/* Diseño general de todas las tarjetas */
+.card {
+    position: absolute;       /* Coloca todas las tarjetas en el mismo punto */
+    inset: 0;                 /* top, right, bottom, left = 0 */
+    border-radius: 15px;      /* Bordes redondeados */
+    background-size: cover;   /* La imagen cubre toda la tarjeta */
+    background-position: center; /* Centra la imagen */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5); /* Agrega sombra */
+}
+
+/* Cada imagen del carrusel */
+.card1 {
+    background-image: url("gato1.jpg"); /* Imagen 1 */
+    transform: rotateY(0deg) translateZ(350px); /* Posición inicial */
+}
+
+.card2 {
+    background-image: url("gato2.jpg"); /* Imagen 2 */
+    transform: rotateY(45deg) translateZ(350px); /* Gira 45° */
+}
+
+.card3 {
+    background-image: url("gato3.jpg"); /* Imagen 3 */
+    transform: rotateY(90deg) translateZ(350px); /* Gira 90° */
+}
+
+.card4 {
+    background-image: url("gato4.jpg"); /* Imagen 4 */
+    transform: rotateY(135deg) translateZ(350px); /* Gira 135° */
+}
+
+.card5 {
+    background-image: url("gato5.jpg"); /* Imagen 5 */
+    transform: rotateY(180deg) translateZ(350px); /* Gira 180° */
+}
+
+.card6 {
+    background-image: url("gato6.jpg"); /* Imagen 6 */
+    transform: rotateY(225deg) translateZ(350px); /* Gira 225° */
+}
+
+.card7 {
+    background-image: url("gato7.jpg");
+    transform: rotateY(270deg) translateZ(350px); /* Gira 270° */
+}
+
+.card8 {
+    background-image: url("gato8.jpg");
+    transform: rotateY(315deg) translateZ(350px); /* Gira 315° */
+}
+
+
+/* Animación encargada de girar todo el carrusel */
+@keyframes animate {
+    from {
+        transform: rotateY(0deg); /* Posición inicial */
+    }
+
+    to {
+        transform: rotateY(360deg); /* Una vuelta completa */
+    }
+}
